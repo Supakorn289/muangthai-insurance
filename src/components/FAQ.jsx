@@ -27,20 +27,20 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-24 sm:py-32 bg-gray-50 overflow-hidden relative">
+    <section className="py-32 sm:py-44 bg-gray-50 overflow-hidden relative">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[300px] bg-brand-pink/5 blur-[120px] rounded-full"></div>
       
       <div className="container mx-auto px-4 sm:px-6 max-w-3xl relative z-10">
-        <div className="text-center mb-16 sm:mb-20">
+        <div className="text-center mb-16 sm:mb-24">
           <span className="text-brand-pink font-black text-xs uppercase tracking-[0.4em] mb-4 block">Information Center</span>
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 tracking-tighter italic">คำถามที่ <span className="text-brand-pink not-italic">พบบ่อย</span></h2>
-          <div className="w-20 h-1.5 bg-brand-pink mx-auto rounded-full mb-8"></div>
+          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-10 leading-snug italic">คำถามที่ <span className="text-brand-pink not-italic">พบบ่อย</span></h2>
+          <div className="w-20 h-1.5 bg-brand-pink mx-auto rounded-full mb-10"></div>
           <p className="text-gray-500 text-lg sm:text-xl font-medium leading-relaxed">
             เราได้รวบรวมข้อสงสัยที่ลูกค้ามักสอบถามเข้ามา เพื่อความรวดเร็วในการตัดสินใจของคุณ
           </p>
         </div>
 
-        <div className="space-y-4 sm:space-y-6">
+        <div className="space-y-4 sm:space-y-8">
           {faqs.map((faq, index) => (
             <div 
               key={index} 
@@ -50,7 +50,7 @@ const FAQ = () => {
                 className="w-full px-6 py-6 sm:px-10 sm:py-8 text-left flex items-center justify-between gap-4 focus:outline-none"
                 onClick={() => toggleAccordion(index)}
               >
-                <span className="text-base sm:text-xl font-bold text-gray-900 leading-tight group-hover:text-brand-pink transition-colors">{faq.question}</span>
+                <span className="text-base sm:text-xl font-bold text-gray-900 leading-snug group-hover:text-brand-pink transition-colors">{faq.question}</span>
                 <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 ${activeIndex === index ? 'bg-brand-pink text-white rotate-180' : 'bg-gray-50 text-brand-pink'}`}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />

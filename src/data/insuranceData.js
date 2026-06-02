@@ -17,7 +17,8 @@ export const insuranceData = {
       tagline: 'ชีวิตและสุขภาพครบจบในกรมธรรม์เดียว',
       description: 'ปรับเปลี่ยนความคุ้มครองชีวิตไปเป็นค่ารักษาพยาบาลได้ ทั้ง IPD และ OPD (อายุ 65-99 ปี)',
       benefits: ['ซื้อ 1 ได้ถึง 2 (ชีวิต+สุขภาพ)', 'รับเงินก้อนเมื่อเสียชีวิตหรือครบสัญญา', 'เหมาจ่ายค่ารักษาพยาบาลตามทุนประกัน'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย เฟล็กซี่ โพรเทคชั่น 99-20.jpg',
+      tags: ['adult', 'life', 'health', 'tax']
     },
     {
       id: 2, category: 'life',
@@ -25,7 +26,8 @@ export const insuranceData = {
       tagline: 'คุ้มครองชีวิตและโรคร้าย ดูแลยาวถึงอายุ 99 ปี',
       description: 'เตรียมความพร้อมไว้รับมือกับโรคร้าย ซื้อ 1 ได้ถึง 2',
       benefits: ['คุ้มครองชีวิตและโรคร้ายแรง', 'ดูแลยาวนานถึงอายุ 99 ปี', 'จ่ายเบี้ยคงที่เพียง 20 ปี'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย ไลฟ์ไทม์ โพรเทคชั่น 99-20.webp',
+      tags: ['adult', 'life', 'critical-illness', 'tax']
     },
     {
       id: 3, category: 'life',
@@ -33,7 +35,8 @@ export const insuranceData = {
       tagline: 'ไม่ต้องตรวจและตอบคำถามสุขภาพ',
       description: 'ประกันสำหรับผู้สูงอายุ (50-75 ปี) ครอบคลุม 3 ด้าน ชีวิต อุบัติเหตุ และสุขภาพ คุ้มครองถึงอายุ 90 ปี',
       benefits: ['ไม่ต้องสำรองจ่าย รพ. คู่สัญญา 400 แห่ง', 'ชดเชยรายวันสูงสุด 4,500 บาท (อุบัติเหตุ)', 'รับเงินคืน 100% เมื่อครบสัญญาอายุ 90 ปี'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย วัยเก๋า อุ่นใจหายห่วง (90-90).webp',
+      tags: ['senior', 'life', 'health', 'accident', 'economy']
     },
     {
       id: 4, category: 'life',
@@ -41,7 +44,8 @@ export const insuranceData = {
       tagline: 'คุ้มครองชีวิตและอุบัติเหตุเพื่อผู้สูงอายุ',
       description: 'แบ่งเบาภาระค่ารักษาพยาบาล สมัครได้ตั้งแต่อายุ 50-75 ปี บุตรซื้อให้บิดามารดาได้',
       benefits: ['ไม่ต้องสำรองจ่ายค่ารักษาจากอุบัติเหตุ', 'คุ้มครองชีวิตสูงสุด 3 ล้านบาท', 'ลดหย่อนภาษีได้สูงสุด 15,000 บาท'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทยวัยเก๋า คุ้มทั่วไทย.jpg',
+      tags: ['senior', 'life', 'accident', 'tax']
     },
     {
       id: 5, category: 'life',
@@ -49,7 +53,8 @@ export const insuranceData = {
       tagline: 'สร้างหลักประกันที่มั่นคง หลักล้านในราคาหลักร้อย',
       description: 'เน้นสร้างความมั่นคงเพื่อครอบครัว ก้าวผ่านเหตุการณ์ไม่คาดฝันอย่างไร้กังวล',
       benefits: ['เบี้ยประกันเริ่มต้นหลักร้อย', 'ความคุ้มครองระดับหลักล้าน', 'สร้างความมั่นคงให้คนข้างหลัง'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย สมาร์ท โพรเทคชั่น 99-20.webp',
+      tags: ['adult', 'life', 'economy', 'tax']
     },
     {
       id: 6, category: 'life',
@@ -57,7 +62,8 @@ export const insuranceData = {
       tagline: 'มรดกความมั่นคง พร้อมการันตีเงินคืน',
       description: 'ส่งมอบความมั่นคงเป็นมรดก คุ้มครองยาวนานถึงอายุ 99 ปี จ่ายเบี้ยสั้น',
       benefits: ['ชำระเบี้ยระยะสั้นเพียง 7 หรือ 9 ปี', 'การันตีเงินคืนตลอดสัญญา', 'ส่งต่อความมั่งคั่งให้รุ่นหลาน'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย แฮปปี้ รีเทิร์น 99-7 และ 99-9.webp',
+      tags: ['adult', 'life', 'saving', 'tax']
     },
     {
       id: 7, category: 'life',
@@ -65,7 +71,8 @@ export const insuranceData = {
       tagline: 'ประกันมรดก จ่ายเบี้ยครั้งเดียว',
       description: 'ส่งต่อความมั่นคงจากรุ่นสู่รุ่น วางแผนมรดกที่ปราศจากภาระภาษี',
       benefits: ['จ่ายเบี้ยประกันเพียงครั้งเดียว', 'เลือกวงเงินมรดกได้ตามต้องการ', 'ผลประโยชน์ได้รับการยกเว้นภาษี'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/ประกันมรดก 99-1 (ไม่มีเงินคืน).webp',
+      tags: ['premium', 'life', 'tax']
     },
     {
       id: 8, category: 'life',
@@ -73,15 +80,8 @@ export const insuranceData = {
       tagline: 'ใช้เงินก้อนเล็ก สร้างเงินก้อนใหญ่',
       description: 'เน้นการสร้างหลักประกันก้อนใหญ่ เตรียมพร้อมส่งต่อให้คนที่รัก',
       benefits: ['มอบหลักประกันเป็นเงินก้อนใหญ่', 'เบี้ยประกันเข้าถึงง่าย', 'ดูแลยาวนานตลอดชีพ'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
-    },
-    {
-      id: 9, category: 'life',
-      name: 'เมืองไทย พรีเมียร์ เลกาซี่',
-      tagline: 'ส่งมอบหลักประกันครอบครัวอย่างมีประสิทธิภาพ',
-      description: 'คุ้มครองชีวิตถึงอายุ 99 ปี สำหรับผู้ที่ต้องการวางแผนส่งต่อทรัพย์สินอย่างไม่สะดุด',
-      benefits: ['ชำระเบี้ยสั้น เลือกได้ 5 หรือ 10 ปี', 'ส่งมอบมรดกอย่างเป็นระบบ', 'คุ้มครองยาวนาน'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/คุ้มครองตลอดชีพ 99-99 (พรีเมียร์).webp',
+      tags: ['adult', 'life', 'economy']
     },
     {
       id: 10, category: 'life',
@@ -89,7 +89,8 @@ export const insuranceData = {
       tagline: 'มูลค่าเวนคืนคงที่ เบี้ยถูกลง ความคุ้มครองเท่าเดิม',
       description: 'นวัตกรรมใหม่สำหรับคนที่ไม่มีแผนเวนคืน ต้องการส่งต่อความมั่งคั่งเป็นมรดกล้วนๆ',
       benefits: ['เบี้ยถูกกว่าปกติเมื่อเทียบความคุ้มครองเท่ากัน', 'ส่งมอบผู้รับประโยชน์โดยตรง ไม่ผ่านศาล', 'ไม่ต้องเสียภาษีมรดก'],
-      image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย พรีเมียร์ เลกาซี่ (ค่าเวนคืนคงที่).webp',
+      tags: ['premium', 'life', 'tax']
     },
 
     // --- หมวดหมู่: ประกันสุขภาพ (Health) ---
@@ -99,7 +100,8 @@ export const insuranceData = {
       tagline: 'คุ้มครองเหนือระดับแบบเหมาจ่าย ครอบคลุมทั่วโลก',
       description: 'ครอบคลุมโรคร้ายทุกระยะ นวัตกรรมรักษาสมัยใหม่ (ยามุ่งเป้า, ภูมิคุ้มกันบำบัด) ดูแลถึงอายุ 99 ปี',
       benefits: ['เหมาจ่าย 20 - 100 ล้านบาท/ปี', 'ค่าห้อง 10,000 - 25,000 บาท/วัน', 'ไม่มีค่าความรับผิดส่วนแรก'],
-      image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/Elite Health Plus (อีลิท เฮลท์ พลัส).jpg',
+      tags: ['premium', 'health', 'critical-illness', 'tax']
     },
     {
       id: 12, category: 'health',
@@ -107,7 +109,8 @@ export const insuranceData = {
       tagline: 'ประกันสุขภาพคน Gen ใหม่ เน้นความคุ้มค่า',
       description: 'ครอบคลุมโรคเล็กน้อยถึงโรคร้ายแรง เบี้ยไม่แพง สามารถซื้อความคุ้มครอง Care Plus เพิ่มได้',
       benefits: ['เหมาจ่ายสูงถึง 5 ล้านบาท/ครั้ง', 'ค่าห้องสูงสุด 4,000 บาท/วัน', 'เลือกแผนแบบมี/ไม่มี ค่ารับผิดส่วนแรกได้'],
-      image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/D Health Lite (ดี เฮลท์ ไลต์).jpg',
+      tags: ['adult', 'health', 'economy', 'tax']
     },
     {
       id: 13, category: 'health',
@@ -115,7 +118,8 @@ export const insuranceData = {
       tagline: 'เหมาจ่ายไซซ์เล็ก เข้าถึงง่าย',
       description: 'ครอบคลุมโรคทั่วไป โรคระบาด อุบัติเหตุ เหมาะสำหรับผู้ที่ไม่มีสวัสดิการใดๆ',
       benefits: ['เหมาจ่าย 200,000 - 500,000 บาท', 'ค่าห้อง 2,000 - 4,000 บาท/วัน', 'จ่ายเบี้ยน้อย คุ้มครองคุ้มค่า'],
-      image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/โครงการเหมาจ่าย เอ็กซ์ตร้า (Maochai Extra).webp',
+      tags: ['adult', 'health', 'economy']
     },
     {
       id: 14, category: 'health',
@@ -123,7 +127,8 @@ export const insuranceData = {
       tagline: 'เติมเต็มสวัสดิการเดิมที่มีอยู่',
       description: 'คุ้มครองแบบเหมาจ่ายในส่วนที่เกินจากสวัสดิการเดิม ด้วยรูปแบบ Deductible',
       benefits: ['เบี้ยถูกกว่าปกติเพราะมีส่วนรับผิดชอบแรก', 'เหมาะสำหรับ Top up สวัสดิการบริษัท', 'เหมาจ่ายวงเงิน 200,000 - 500,000 บาท'],
-      image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/Extra Care Plus & Extra Care.webp',
+      tags: ['adult', 'health', 'economy']
     },
     {
       id: 15, category: 'health',
@@ -131,7 +136,8 @@ export const insuranceData = {
       tagline: 'ดูแลลูกน้อยให้อุ่นใจในทุกช่วงวัย',
       description: 'ประกันสุขภาพเหมาจ่ายสำหรับเด็ก สมัครได้ตั้งแต่ 30 วัน ลดความกังวลให้พ่อแม่',
       benefits: ['เหมาจ่ายสูงสุด 5 ล้านบาท/ครั้ง', 'ครอบคลุมการเจ็บป่วยของเด็กเล็ก', 'ดูแลต่อเนื่องอุ่นใจ'],
-      image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/ประกันสุขภาพเด็ก (ดี เฮลท์ ไลต์ สำหรับเด็ก).jpg',
+      tags: ['kid', 'health']
     },
     {
       id: 16, category: 'health',
@@ -139,7 +145,8 @@ export const insuranceData = {
       tagline: 'เคลมง่าย ไม่ต้องสำรองจ่าย',
       description: 'ยื่นแสดงบัตร Health care เข้าโรงพยาบาลคู่สัญญาได้ทันที สมัครได้ถึงอายุ 70 ปี',
       benefits: ['ไม่ต้องสำรองจ่ายเงินไปก่อน', 'เหมาจ่ายรักษาสูงสุด 5,000,000 บาท/ปี', 'เหมาะกับการซื้อให้ลูกน้อยและเด็ก'],
-      image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/สมาร์ทเฮลท์ (Smart Health).jpg',
+      tags: ['adult', 'kid', 'health']
     },
     {
       id: 17, category: 'health',
@@ -147,7 +154,8 @@ export const insuranceData = {
       tagline: 'คุ้มครองเฉพาะผู้ป่วยนอก รับยากลับบ้าน',
       description: 'ดูแลค่าใช้จ่ายเมื่อเจ็บป่วยเล็กน้อย พบแพทย์แล้วกลับบ้านได้โดยไม่ต้องแอดมิท',
       benefits: ['ไม่ต้องนอนโรงพยาบาลก็เบิกได้', 'แบ่งเบาภาระค่ารักษาพยาบาลย่อยๆ', 'เลือกแบบต่อครั้งหรือเหมาจ่ายได้'],
-      image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/OPD ต่อครั้ง & OPD เหมาจ่าย.webp',
+      tags: ['adult', 'health']
     },
     {
       id: 18, category: 'health',
@@ -155,7 +163,8 @@ export const insuranceData = {
       tagline: 'ชดเชยรายได้เมื่อต้องนอนโรงพยาบาล',
       description: 'มุ่งเน้นจ่ายเงินสดเพื่อชดเชยยามขาดรายได้เมื่อต้องแอดมิท',
       benefits: ['รับเงินก้อนรายวันชดเชยการขาดรายได้', 'หมดกังวลเรื่องต้องหยุดงาน', 'เบี้ยประกันเข้าถึงง่าย'],
-      image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/วงเงินแน่นอน (ชดเชยรายวัน).jpg',
+      tags: ['adult', 'health']
     },
 
     // --- หมวดหมู่: ประกันโรคร้ายแรง (Critical Illness) ---
@@ -165,7 +174,8 @@ export const insuranceData = {
       tagline: 'ดูแลครอบคลุม 36 โรคร้ายแรงทุกระยะ',
       description: 'คุ้มครองต่อเนื่องตั้งแต่ตรวจเจอไปจนถึงเสียชีวิต ครอบคลุมโรคที่คนไทยมักเป็น',
       benefits: ['จ่ายเงินก้อนทันทีที่วินิจฉัยพบ', 'คุ้มครองรวมถึงกรณีเสียชีวิต', 'ครอบคลุมมะเร็ง หัวใจ ตับ ปอด หลอดเลือดสมอง'],
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/CI Perfect Care (ซีไอ เพอร์เฟค แคร์).webp',
+      tags: ['adult', 'critical-illness', 'life', 'tax']
     },
     {
       id: 20, category: 'critical',
@@ -173,7 +183,8 @@ export const insuranceData = {
       tagline: 'เคลมได้หลายครั้ง หากป่วยต่างกลุ่มโรค',
       description: 'ครอบคลุม 35 โรค แบ่งเป็น 4 กลุ่มโรคร้ายแรง หมดกังวลแม้โชคร้ายซ้ำซ้อน',
       benefits: ['รับเงินก้อนได้หลายครั้ง', 'จ่ายสูงสุดรวมถึง 400%', 'ครอบคลุมโรคร้ายแรงหลากหลาย'],
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/Multiple CI (มัลติเพิล ซีไอ).webp',
+      tags: ['adult', 'critical-illness', 'tax']
     },
     {
       id: 21, category: 'critical',
@@ -181,7 +192,8 @@ export const insuranceData = {
       tagline: 'เลือกกลุ่มโรคและระยะของโรคได้เอง',
       description: 'ยืดหยุ่นสูง เลือกความคุ้มครองเฉพาะกลุ่มโรคที่กังวล (เช่น จากพันธุกรรมครอบครัว) ได้ถึง 6 แผน',
       benefits: ['ออกแบบแผนความคุ้มครองได้เอง', 'เน้นเฉพาะจุดที่กังวลได้', 'จ่ายเบี้ยคุ้มค่าตามสิ่งที่เลือก'],
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/D Care (ดี แคร์).jpg', // ใช้รูป CI Perfect Care แทนถ้าไม่มีรูป D Care
+      tags: ['adult', 'critical-illness', 'tax']
     },
     {
       id: 22, category: 'critical',
@@ -189,7 +201,8 @@ export const insuranceData = {
       tagline: 'เน้นโรคมะเร็ง และ ไตวายเรื้อรัง',
       description: 'ดูแลครอบคลุมทุกระยะ นวัตกรรมรักษาสมัยใหม่ (Targeted Therapy) เป็นซ้ำก็คุ้มครอง',
       benefits: ['คุ้มครองค่ารักษาทั้ง IPD และ OPD 5 ล้าน/โรค', 'เลือกคุ้มครอง 2 โรคเบี้ยถูกลง 10%', 'เข้าถึงเทคโนโลยีรักษาสมัยใหม่'],
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/Care Plus (แคร์ พลัส).jpg',
+      tags: ['adult', 'critical-illness', 'health']
     },
     {
       id: 23, category: 'critical',
@@ -197,7 +210,8 @@ export const insuranceData = {
       tagline: 'ออกแบบมาเพื่อผู้สูงอายุโดยเฉพาะ',
       description: 'คุ้มครองโรควัยชรา เช่น หลอดเลือดสมอง อัลไซเมอร์ อุบัติเหตุรุนแรง',
       benefits: ['รับมือกับโรคเฉพาะทางในวัยเกษียณ', 'ซัพพอร์ตภาวะแทรกซ้อนที่รุนแรง', 'บุตรหลานซื้อให้พ่อแม่ได้'],
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/สมาร์ท ซิลเวอร์ และ สมาร์ท ซิลเวอร์ พลัส.webp',
+      tags: ['senior', 'critical-illness', 'accident']
     },
     {
       id: 24, category: 'critical',
@@ -205,7 +219,8 @@ export const insuranceData = {
       tagline: 'ดูแลโรคฮิตที่พบบ่อยในเด็ก',
       description: 'รับมือโรคร้ายแรงที่อาจมาเยือนลูกน้อยโดยไม่ส่งสัญญาณล่วงหน้า',
       benefits: ['คุ้มครองโรคยอดฮิตของเด็ก', 'เตรียมเงินสำรองก้อนใหญ่', 'คลายกังวลเรื่องค่าใช้จ่ายหนัก'],
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/Kids Care (คิดส์ แคร์).jpg',
+      tags: ['kid', 'critical-illness']
     },
     {
       id: 25, category: 'critical',
@@ -213,7 +228,8 @@ export const insuranceData = {
       tagline: 'คุ้มครองโรคมะเร็งโดยเฉพาะ ทุกระยะ',
       description: 'มีเงินสำรองก้อนแรกไว้เป็นค่ารักษาทันทีที่ทราบผล เพิ่มโอกาสรักษาให้หายขาด',
       benefits: ['ตรวจเจอรับเงินก้อนไปรักษาทันที', 'ชดเชยนอนโรงพยาบาลสูงสุดวันละ 10,000 บาท', 'เบี้ยจับต้องได้ง่าย'],
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/Pure Cancer & Cancer Rider.webp',
+      tags: ['adult', 'critical-illness', 'economy']
     },
     {
       id: 26, category: 'critical',
@@ -221,7 +237,8 @@ export const insuranceData = {
       tagline: 'เน้นโรคเบาหวานและภาวะแทรกซ้อน',
       description: 'รองรับค่าใช้จ่ายและผลกระทบต่อเนื่องที่เกิดจากโรคเบาหวานโดยตรง',
       benefits: ['คุ้มครองผลประโยชน์สูงสุดถึง 300%', 'ครอบคลุมภาวะแทรกซ้อน', 'เจาะจงความเสี่ยงเฉพาะกลุ่ม'],
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/คุ้มครองโรคเบาหวาน.jpg',
+      tags: ['adult', 'critical-illness']
     },
 
     // --- หมวดหมู่: ประกันชีวิตแบบบำนาญ (Pension) ---
@@ -231,7 +248,8 @@ export const insuranceData = {
       tagline: 'ชำระเบี้ยจนถึงอายุ 60 ปี',
       description: 'เหมาะสำหรับวัยทำงาน (20-55 ปี) รับเงินบำนาญปีละ 12% ทุกปีตั้งแต่อายุ 60 - 85 ปี',
       benefits: ['รับบำนาญ 12% ทุกปี', 'ดูแลยาวถึงอายุ 85', 'ลดหย่อนภาษีได้สูงสุด 200,000 บาท'],
-      image: 'https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย8560 จี15.jpg',
+      tags: ['adult', 'pension', 'tax']
     },
     {
       id: 28, category: 'pension',
@@ -239,7 +257,8 @@ export const insuranceData = {
       tagline: 'ชำระเบี้ยประกันภัยเพียงแค่ครั้งเดียว',
       description: 'เหมาะสำหรับวัยใกล้เกษียณ (55-70 ปี) ที่มีเงินก้อนและต้องการจัดสรรเป็นรายได้ประจำ',
       benefits: ['รับบำนาญสม่ำเสมอ 12% ทุกปี', 'จ่ายครั้งเดียวจบ ไร้ภาระผูกพัน', 'รับยาวถึงอายุ 85 ปี'],
-      image: 'https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย8501.jpg',
+      tags: ['senior', 'pension', 'tax']
     },
     {
       id: 29, category: 'pension',
@@ -247,7 +266,8 @@ export const insuranceData = {
       tagline: 'ยืดหยุ่นสูง จ่ายเบี้ยสั้น 5 ปี',
       description: 'ปรับเปลี่ยนอายุเริ่มรับบำนาญได้ตามไลฟ์สไตล์ (55, 60, หรือ 65 ปี)',
       benefits: ['ออมระยะสั้นเพียง 5 ปี', 'ยืดหยุ่นในการรับเงิน', 'วางแผนภาษีได้อย่างเป็นระบบ'],
-      image: 'https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เฟล็กซี่ รีไทร์ 90-5 (ดี 55, 60, 65).jpg',
+      tags: ['adult', 'pension', 'tax']
     },
     {
       id: 30, category: 'pension',
@@ -255,7 +275,8 @@ export const insuranceData = {
       tagline: 'จ่ายเบี้ยครั้งเดียว ออกแบบอายุรับบำนาญได้',
       description: 'เหมาะสำหรับคนมีเงินก้อนพร้อมออม ออกแบบจังหวะรับเงินหลังเกษียณได้เอง',
       benefits: ['จ่ายเบี้ยครั้งเดียว', 'เลือกรับเงินที่อายุ 55, 60, หรือ 65', 'ออมง่ายไม่เป็นภาระยาว'],
-      image: 'https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เฟล็กซี่ รีไทร์ 90-1 (ดี 55, 60, 65).png',
+      tags: ['adult', 'pension', 'tax']
     },
     {
       id: 31, category: 'pension',
@@ -263,7 +284,8 @@ export const insuranceData = {
       tagline: 'แฮปปี้ทั้งก่อนและหลังเกษียณ แถมประกันอุบัติเหตุ',
       description: 'แผนที่ช่วยให้มีเงินใช้ยามเกษียณ พร้อมเสริมความมั่นใจด้วยประกันอุบัติเหตุแนบมาให้',
       benefits: ['รับบำนาญต่อเนื่อง', 'คุ้มครองอุบัติเหตุฟรี', 'เหมาะสำหรับอายุ 20 - 50 ปี'],
-      image: 'https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย แฮปปี้ รีไทร์ 60.jpg',
+      tags: ['adult', 'pension', 'accident']
     },
 
     // --- หมวดหมู่: ประกันออมทรัพย์ (Saving) ---
@@ -273,7 +295,8 @@ export const insuranceData = {
       tagline: 'จ่ายเบี้ย 3 ปี คุ้มครอง 10 ปี (ผลตอบแทน 333%)',
       description: 'ประกันระยะสั้น คืนเงินทุกปี ไม่ชอบภาระผูกพันระยะยาว ตัวช่วยลดหย่อนภาษีชั้นเยี่ยม',
       benefits: ['ผลประโยชน์รวมตลอดสัญญาสูงถึง 333%', 'มีเงินคืนให้ทุกปี', 'ชำระเบี้ยสั้นมาก'],
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย คืนจัดเต็ม 10-3.webp',
+      tags: ['adult', 'saving', 'tax']
     },
     {
       id: 33, category: 'saving',
@@ -281,7 +304,8 @@ export const insuranceData = {
       tagline: 'จ่ายเบี้ย 3 ปี คุ้มครอง 5 ปี ไม่ต้องตรวจสุขภาพ',
       description: 'การันตีเงินจ่ายคืน 2% ทุกปี และรับก้อนโตเมื่อครบ 5 ปี (ผลประโยชน์รวม 310%)',
       benefits: ['ไม่ต้องตอบคำถามสุขภาพ', 'วงรอบสั้นมากแค่ 5 ปีได้เงินก้อนคืน', 'ลดหย่อนภาษีได้'],
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย สปีด รีเทิร์น 5-3.jpg',
+      tags: ['adult', 'saving', 'tax', 'economy']
     },
     {
       id: 34, category: 'saving',
@@ -289,7 +313,8 @@ export const insuranceData = {
       tagline: 'สร้างวินัยการเงิน รับเงินคืน 183%',
       description: 'ออมระยะกลาง จ่าย 16 ปี คุ้มครอง 25 ปี เหมาะกับ First Jobber ที่อยากสร้างวินัย',
       benefits: ['เงินจ่ายคืนทุกปีรวม 33%', 'รับเงินก้อน 150% เมื่อครบสัญญา', 'เบี้ยไม่แพง ออมง่าย'],
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย ซุปเปอร์ เซฟเวอร์ 25-16.webp',
+      tags: ['adult', 'saving', 'tax']
     },
     {
       id: 35, category: 'saving',
@@ -297,7 +322,8 @@ export const insuranceData = {
       tagline: 'จ่ายครั้งเดียว อิงดัชนีโลก เงินต้นไม่หาย',
       description: 'ประกันที่เชื่อมโยงผลตอบแทนดัชนีโลก Citi Global Multi Asset การันตีได้เงินคืนทุกปี',
       benefits: ['เงินต้นการันตีไม่สูญหาย 100%', 'โอกาสรับผลตอบแทนสูงจากตลาดโลก', 'คุ้มครอง 10 ปี จ่ายหนเดียว'],
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย สมาร์ท ลิงค์ โปร 10-1 (Global).webp',
+      tags: ['premium', 'saving', 'life']
     },
     {
       id: 36, category: 'saving',
@@ -305,7 +331,8 @@ export const insuranceData = {
       tagline: 'เตรียมทุนการศึกษาเพื่ออนาคตลูกรัก',
       description: 'รับเงินจ่ายคืน 10% ทุกๆ 3 ปี (รวม 60%) ไว้เป็นค่าใช้จ่ายในแต่ละช่วงวัยเรียน',
       benefits: ['รับเงินคืนตามรอบวัยเรียน', 'สร้างหลักประกันให้ลูก', 'ออมระยะยาวเพื่อเป้าหมายชัดเจน'],
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทย แฮปปี้ ไลฟ์ พลัส 21-21.webp',
+      tags: ['kid', 'saving', 'tax']
     },
 
     // --- หมวดหมู่: ประกันอุบัติเหตุ (Accident) ---
@@ -315,7 +342,8 @@ export const insuranceData = {
       tagline: 'คุ้มครองเต็มแมกซ์ ตอบโจทย์ทุกไลฟ์สไตล์',
       description: 'ประกันอุบัติเหตุส่วนบุคคลที่ช่วยให้อุ่นใจ รายได้ไม่สะดุด เงินเก็บไม่หาย',
       benefits: ['วงเงินรักษาเพียงพอ', 'คุ้มครองครบจบ', 'ซื้อผ่านออนไลน์ได้ง่าย'],
-      image: 'https://images.unsplash.com/photo-1512100356956-c1b47f4b8a21?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/PA Pay Max.webp',
+      tags: ['adult', 'accident']
     },
     {
       id: 38, category: 'accident',
@@ -323,7 +351,8 @@ export const insuranceData = {
       tagline: 'มอบเงินชดเชยรายได้ เมื่อนอนโรงพยาบาล',
       description: 'แผนนี้ช่วยให้รายได้ไม่สะดุด เหมาะกับคนทำงานที่กังวลเรื่องขาดรายได้ตอนพักฟื้น',
       benefits: ['รับเงินก้อนรายวันชดเชยรายได้', 'ไม่ต้องกังวลยามหยุดงาน', 'เติมเต็มชีวิตให้ราบรื่น'],
-      image: 'https://images.unsplash.com/photo-1512100356956-c1b47f4b8a21?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/PA Take Care.webp',
+      tags: ['adult', 'accident']
     },
     {
       id: 39, category: 'accident',
@@ -331,7 +360,8 @@ export const insuranceData = {
       tagline: 'เจ็บก็จ่าย ไม่เจ็บก็ได้คืน!',
       description: 'ประกันแบบไม่เคลมมีคืน เอาใจคนชอบความคุ้มค่า ไม่เป็นอะไรก็ได้เงินคืน',
       benefits: ['มีวงเงินรักษารองรับ', 'ไม่มีเคลมรับเงินคืน', 'รายได้ไม่ขาดหาย'],
-      image: 'https://images.unsplash.com/photo-1512100356956-c1b47f4b8a21?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/PA Return Cash.webp',
+      tags: ['adult', 'accident', 'saving']
     },
     {
       id: 40, category: 'accident',
@@ -339,7 +369,8 @@ export const insuranceData = {
       tagline: 'คุ้มครอง 24 ชม. ทั่วโลก เพื่อสายลุย',
       description: 'ชอบกีฬาเอ็กซ์ตรีม เช่น ชกมวย ดำน้ำ โดดร่ม ก็สนุกให้สุด ไม่ต้องกังวล',
       benefits: ['ครอบคลุมกีฬาเอ็กซ์ตรีม', 'คุ้มครอง 24 ชั่วโมง ทั่วโลก', 'สายลุยต้องมี'],
-      image: 'https://images.unsplash.com/photo-1512100356956-c1b47f4b8a21?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/PA Extreme.webp',
+      tags: ['adult', 'accident']
     },
 
     // --- หมวดหมู่: ประกันกลุ่ม (Group) ---
@@ -349,7 +380,8 @@ export const insuranceData = {
       tagline: 'ดูแลพนักงาน 20 - 100 คน ครบวงจร',
       description: 'แผนสำหรับ SME ยกระดับสวัสดิการ ดูแลทั้งชีวิต สุขภาพ และอุบัติเหตุ',
       benefits: ['สร้างความผูกพันต่อองค์กร', 'ลดหย่อนภาษีบริษัทได้ 100%', 'เบี้ยคุ้มค่ากับงบ SME'],
-      image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทยSME 20 plus.webp',
+      tags: ['group', 'health', 'life']
     },
     {
       id: 42, category: 'group',
@@ -357,7 +389,8 @@ export const insuranceData = {
       tagline: 'เริ่มต้นพนักงานเพียง 3 - 19 คน',
       description: 'สำหรับกิจการขนาดเล็ก หรือ Startup ที่ต้องการสวัสดิการดึงดูดพนักงาน',
       benefits: ['สมัครง่าย ไม่ต้องตรวจสุขภาพ', 'ดูแลลูกน้องแบบองค์กรใหญ่', 'พนักงานไม่ต้องเสียภาษีเพิ่ม'],
-      image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/เมืองไทยSME Smile.jpg',
+      tags: ['group', 'health', 'life']
     },
     {
       id: 43, category: 'group',
@@ -365,7 +398,8 @@ export const insuranceData = {
       tagline: 'เริ่ม 5 คน หรือ แม่บ้าน 2 คนก็ทำได้',
       description: 'เจาะจงธุรกิจรายย่อย ร้านอาหาร หรือนายจ้างที่ต้องการซื้อให้แม่บ้าน/คนขับรถ',
       benefits: ['ครอบคลุม IPD และ OPD', 'ยืดหยุ่น ราคาเข้าถึงง่าย', 'นายจ้างสบายใจ ลูกจ้างมั่นใจ'],
-      image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/Small Group & Housekeeping Package.jpg',
+      tags: ['group', 'health']
     },
 
     // --- หมวดหมู่: ยูนิตลิงค์ (Unit-Linked) ---
@@ -375,7 +409,8 @@ export const insuranceData = {
       tagline: 'ยืดหยุ่นสูง เลือกจ่ายเบี้ยได้ตามใจ',
       description: 'ประกันควบการลงทุน ปรับเปลี่ยนได้ตามจังหวะชีวิต ชำระเบี้ย 3, 5, 10 ปี หรือตลอดชีพ',
       benefits: ['เลือกระยะเวลาจ่ายเบี้ยเองได้', 'ปรับเพิ่มลดทุนชีวิตได้', 'โอกาสรับผลตอบแทนกองทุนรวม'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/mDesign.webp',
+      tags: ['premium', 'unitlinked', 'life', 'saving']
     },
     {
       id: 45, category: 'unitlinked',
@@ -383,15 +418,17 @@ export const insuranceData = {
       tagline: 'จ่ายเบี้ยครั้งเดียว พลัสความมั่นคง',
       description: 'อุ่นใจจ่ายหนเดียวจบ ได้คุ้มครองชีวิตยาวนานพร้อมโอกาสลงทุน เติบโตถึงอายุ 99 ปี',
       benefits: ['จ่ายครั้งเดียว ไม่มีภาระผูกพัน', 'คุ้มครองพร้อมลงทุนระยะยาว', 'สิทธิลดหย่อนภาษีส่วนคุ้มครอง'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400'
+      image: '/src/assets/Images/mOnePlus & mOne.webp',
+      tags: ['premium', 'unitlinked', 'life', 'saving']
     },
     {
       id: 46, category: 'unitlinked',
       name: 'mGrow 615',
       tagline: 'จ่ายเบี้ย 6 ปี คุ้มครองยาว 15 ปี',
       description: 'สร้างพอร์ตชีวิตมั่นคง จำกัดเวลาจ่ายเบี้ยสั้นๆ แต่ให้เงินลงทุนดูแลต่อเนื่อง',
-      benefits: ['แผนจ่ายเบี้ยสั้น ชัดเจน', 'ออกแบบเพื่อการเติบโตแบบก้าวกระโดด', 'ถอนเงินบางส่วนมาใช้ได้เมื่อฉุกเฉิน'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400'
+      benefits: ['แผนจ่ายเบี้ยสั้น ชัดเจน', 'ออกแบบเพื่อการเติบโตแบบก้าวยระโดด', 'ถอนเงินบางส่วนมาใช้ได้เมื่อฉุกเฉิน'],
+      image: '/src/assets/Images/mGrow 615.jpg',
+      tags: ['premium', 'unitlinked', 'saving']
     }
   ],
   reviews: [

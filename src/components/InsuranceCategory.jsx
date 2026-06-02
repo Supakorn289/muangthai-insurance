@@ -58,6 +58,16 @@ const InsuranceCategory = ({ categories, activeCategory, setActiveCategory }) =>
 
   return (
     <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-2">
+      <button
+        onClick={() => setActiveCategory('all')}
+        className={`px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-full text-xs sm:text-base font-bold transition-all flex items-center gap-2 border ${
+          activeCategory === 'all'
+            ? 'bg-brand-pink text-white border-brand-pink shadow-lg shadow-brand-pink/30 scale-105 z-10'
+            : 'bg-white text-gray-400 border-gray-200 hover:border-brand-pink/30 hover:text-gray-600'
+        }`}
+      >
+        <span className="whitespace-nowrap">ทั้งหมด</span>
+      </button>
       {categories.map((cat) => (
         <button
           key={cat.id}
@@ -65,7 +75,7 @@ const InsuranceCategory = ({ categories, activeCategory, setActiveCategory }) =>
           className={`px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-full text-xs sm:text-base font-bold transition-all flex items-center gap-2 border ${
             activeCategory === cat.id
               ? 'bg-brand-pink text-white border-brand-pink shadow-lg shadow-brand-pink/30 scale-105 z-10'
-              : 'bg-white/5 text-gray-400 border-white/10 hover:border-brand-pink/30 hover:text-white'
+              : 'bg-white text-gray-400 border-gray-200 hover:border-brand-pink/30 hover:text-gray-600'
           }`}
         >
           <span className={`${activeCategory === cat.id ? 'scale-110' : 'opacity-70 group-hover:opacity-100'}`}>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SmartAssistantBanner = () => {
   return (
-    <section className="py-12 sm:py-24 overflow-hidden">
+    <section className="py-20 sm:py-32 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="relative bg-[#050505] p-10 sm:p-20 rounded-[2.5rem] sm:rounded-[4rem] overflow-hidden shadow-2xl">
           {/* Decorative Elements */}
@@ -15,7 +15,7 @@ const SmartAssistantBanner = () => {
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-ping"></span>
                 Coming Soon: AI Concierge
               </div>
-              <h2 className="text-3xl sm:text-5xl lg:text-7xl font-black text-white mb-8 leading-tight tracking-tighter">
+              <h2 className="text-3xl sm:text-4xl font-black text-white mb-10 leading-snug">
                 พบกับผู้ช่วย <span className="text-brand-pink">AI</span> อัจฉริยะ <br className="hidden sm:block" />
                 บน <span className="italic">LINE</span> ของคุณเร็วๆ นี้
               </h2>
