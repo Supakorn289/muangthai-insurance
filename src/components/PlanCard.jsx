@@ -1,6 +1,8 @@
 import React from 'react';
 
 const PlanCard = ({ plan, onSelect }) => {
+  const imageUrl = new URL('../assets/image/' + plan.image.split('/').pop(), import.meta.url).href;
+
   const getCategoryStyles = (category) => {
     switch (category) {
       case 'life': return { color: 'text-blue-500', bg: 'bg-blue-500', gradient: 'from-blue-900/80', light: 'bg-blue-50' };
@@ -19,8 +21,13 @@ const PlanCard = ({ plan, onSelect }) => {
 
   return (
     <div className={`group bg-white rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col h-full transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:border-${styles.color.split('-')[1]}-200/50`}>
-      <div className="relative h-48 sm:h-64 overflow-hidden">
-        <img src={plan.image} alt={plan.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+      <div className={`relative h-48 sm:h-64 overflow-hidden ${styles.bg}/5`}>
+        <img 
+          src={imageUrl} 
+          alt={plan.name} 
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+          onError={(e) => { e.target.style.display = 'none'; }}
+        />
         <div className={`absolute inset-0 bg-gradient-to-t ${styles.gradient} via-black/20 to-transparent`}></div>
         <div className={`absolute top-4 left-4 sm:top-6 sm:left-6 ${styles.bg} text-white px-3 py-1 sm:px-4 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-black uppercase tracking-widest shadow-lg`}>
           {plan.category === 'life' ? 'Recommended' : 'Best Seller'}
