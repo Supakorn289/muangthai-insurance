@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #ED008C;
+  --color-brand-orange: #FF6600;
+  --color-brand-dark: #0F172A;
+  --color-brand-light: #F8FAFC;
+  --color-premium-black: #050505;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Prompt', 'Inter', sans-serif;
+  background-color: var(--color-brand-light);
+  color: #1F2937;
+  line-height: 1.6;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-900 tracking-tight;
+  }
+}
+
+/* Scroll Animations with enhanced smoothness */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Premium Utilities */
+.glass-card {
+  @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-xl;
+}
+
+.dark-glass-card {
+  @apply bg-gray-900/40 backdrop-blur-xl border border-white/5 shadow-2xl;
+}
+
+.text-gradient-pink {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-pink to-[#FF4D8D];
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full border-4 border-solid border-gray-100;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brand-pink/50;
+}
