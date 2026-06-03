@@ -5,22 +5,22 @@ const ReviewSection = ({ reviews }) => {
     <section id="reviews" className="py-32 bg-white overflow-hidden relative">
       <div className="container mx-auto px-4 text-center relative z-10">
         <span className="text-brand-pink font-black text-xs uppercase tracking-[0.4em] mb-4 block">Testimonials</span>
-        <h2 className="text-4xl lg:text-7xl font-black text-gray-900 mb-8 tracking-tighter italic">ความเชื่อมั่นจาก <span className="text-brand-pink not-italic">คนสำคัญ</span> ของเรา</h2>
+        <h2 className="text-3xl lg:text-5xl font-black text-gray-900 mb-8 leading-relaxed italic">ความเชื่อมั่นจาก <span className="text-brand-pink not-italic">คนสำคัญ</span> ของเรา</h2>
         <div className="w-20 h-1.5 bg-brand-pink mx-auto rounded-full mb-12"></div>
-        <p className="text-gray-500 mb-20 max-w-2xl mx-auto text-xl font-medium leading-relaxed">
+        <p className="text-gray-500 mb-20 max-w-2xl mx-auto text-lg font-medium leading-relaxed">
           ความพึงพอใจและความมั่นคงของลูกค้า คือรางวัลอันทรงคุณค่าที่ช่วยให้เราก้าวต่อไปอย่างมั่นคง
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {reviews.map((review) => (
-            <div key={review.id} className="group bg-white p-12 rounded-[3rem] shadow-[0_30px_60px_rgba(0,0,0,0.04)] border border-gray-50 flex flex-col items-center hover:translate-y-[-10px] hover:shadow-[0_40px_80px_rgba(237,0,140,0.1)] transition-all duration-500 relative overflow-hidden">
+            <div key={review.id} className="group bg-white p-10 rounded-[3rem] shadow-[0_30px_60px_rgba(0,0,0,0.04)] border border-gray-50 flex flex-col items-center hover:translate-y-[-10px] hover:shadow-[0_40px_80px_rgba(237,0,140,0.1)] transition-all duration-500 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-2 h-full bg-brand-pink scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
               
               <div className="flex gap-1.5 mb-8">
                 {[...Array(5)].map((_, i) => (
                   <svg 
                     key={i} 
-                    className={`w-6 h-6 ${i < review.rating ? 'text-yellow-400' : 'text-gray-100'}`} 
+                    className={`w-5 h-5 ${i < review.rating ? 'text-yellow-400' : 'text-gray-100'}`} 
                     fill="currentColor" 
                     viewBox="0 0 20 20"
                   >
@@ -28,10 +28,10 @@ const ReviewSection = ({ reviews }) => {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-700 text-xl leading-[1.8] mb-12 italic font-medium">"{review.comment}"</p>
+              <p className="text-gray-700 text-lg leading-[1.8] mb-12 italic font-medium">"{review.comment}"</p>
               <div className="mt-auto">
                 <div className="w-16 h-1 bg-gray-100 mx-auto mb-6 group-hover:bg-brand-pink transition-colors group-hover:w-24"></div>
-                <p className="font-black text-gray-900 text-2xl tracking-tight">{review.name}</p>
+                <p className="font-black text-gray-900 text-xl">{review.name}</p>
                 <div className="flex items-center justify-center gap-2 mt-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
                   <p className="text-gray-400 text-xs font-black uppercase tracking-widest">Verified Client</p>

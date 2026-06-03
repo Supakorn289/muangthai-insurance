@@ -39,10 +39,10 @@ const Navbar = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-black tracking-tighter leading-none text-gray-900">
+              <span className="text-base sm:text-lg font-black leading-relaxed text-gray-900">
                 SUPER<span className="text-brand-pink">AGENT</span>
               </span>
-              <span className="text-[8px] sm:text-[10px] font-bold text-brand-pink tracking-[0.2em] uppercase mt-0.5">Premium Service</span>
+              <span className="text-[7px] sm:text-[9px] font-bold text-brand-pink tracking-[0.2em] uppercase mt-0.5">Premium Service</span>
             </div>
           </div>
           

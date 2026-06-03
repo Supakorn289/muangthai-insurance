@@ -36,9 +36,9 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-24">
           <span className="text-brand-pink font-black text-xs uppercase tracking-[0.4em] mb-4 block">Our Commitment</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-10 leading-snug italic">ทำไมต้องเลือก <span className="text-brand-pink not-italic">Super Agent</span></h2>
+          <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-10 leading-relaxed italic">ทำไมต้องเลือก <span className="text-brand-pink not-italic">Super Agent</span></h2>
           <div className="w-20 h-1.5 bg-brand-pink mx-auto rounded-full mb-10"></div>
-          <p className="text-gray-500 max-w-2xl mx-auto text-xl font-medium leading-relaxed">
+          <p className="text-gray-500 max-w-2xl mx-auto text-lg font-medium leading-relaxed">
             เรามุ่งมั่นมอบบริการระดับ <span className="text-gray-900 font-bold">World-Class</span> เพื่อให้คุณและครอบครัวใช้ชีวิตได้อย่างมั่นใจและไร้กังวลในทุกย่างก้าว
           </p>
         </div>
@@ -47,15 +47,15 @@ const WhyChooseUs = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="p-12 rounded-[3rem] bg-[#FDFDFD] border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:border-brand-pink/20 hover:shadow-[0_40px_80px_rgba(237,0,140,0.1)] transition-all duration-500 group relative overflow-hidden"
+              className="p-10 rounded-[3rem] bg-[#FDFDFD] border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:border-brand-pink/20 hover:shadow-[0_40px_80px_rgba(237,0,140,0.1)] transition-all duration-500 group relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-pink/5 rounded-full -mr-16 -mt-16 blur-2xl group-hover:bg-brand-pink/10 transition-colors"></div>
               
-              <div className="w-20 h-20 bg-white rounded-[1.5rem] shadow-xl border border-gray-50 flex items-center justify-center mb-10 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3">
+              <div className="w-16 h-16 bg-white rounded-[1.25rem] shadow-xl border border-gray-50 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-black text-gray-900 mb-6 leading-snug">{feature.title}</h3>
-              <p className="text-gray-500 leading-relaxed font-medium text-lg">
+              <h3 className="text-xl font-black text-gray-900 mb-5 leading-relaxed">{feature.title}</h3>
+              <p className="text-gray-500 leading-relaxed font-medium text-base">
                 {feature.description}
               </p>
             </div>

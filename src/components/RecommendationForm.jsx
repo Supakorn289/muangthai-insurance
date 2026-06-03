@@ -76,7 +76,7 @@ const RecommendationForm = ({ onSelectPlan }) => {
               <span className="inline-block px-4 py-1.5 rounded-full bg-brand-pink/10 text-brand-pink text-xs font-black uppercase tracking-widest mb-4">
                 Recommended For You
               </span>
-              <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6 tracking-tighter">แผนที่แนะนำสำหรับคุณ</h2>
+              <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6 leading-relaxed">แผนที่แนะนำสำหรับคุณ</h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-xl font-medium leading-relaxed">เราได้คัดสรรแผนที่เหมาะสมที่สุดจากความต้องการและไลฟ์สไตล์ของคุณ</p>
             </div>
             
@@ -118,7 +118,7 @@ const RecommendationForm = ({ onSelectPlan }) => {
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-pink animate-pulse"></span>
                     Step {step} of {totalSteps}
                   </div>
-                  <h2 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">ค้นหาแผนประกันที่ <span className="text-brand-pink italic">Perfect</span> สำหรับคุณ</h2>
+                  <h2 className="text-3xl sm:text-4xl font-black text-gray-900 leading-relaxed">ค้นหาแผนประกันที่ <span className="text-brand-pink italic">Perfect</span> สำหรับคุณ</h2>
                 </div>
 
                 <div className="min-h-[320px] flex flex-col justify-center">
@@ -127,16 +127,40 @@ const RecommendationForm = ({ onSelectPlan }) => {
                       <h3 className="text-2xl font-black text-gray-800 text-center">คุณอยู่ในช่วงวัยใด?</h3>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                         {[
-                          { label: 'เด็ก (ต่ำกว่า 20)', value: 'kid', icon: '👶' },
-                          { label: 'วัยทำงาน (20-55)', value: 'adult', icon: '💼' },
-                          { label: 'วัยเกษียณ (55+)', value: 'senior', icon: '👵' }
+                          { 
+                            label: 'เด็ก (ต่ำกว่า 20)', 
+                            value: 'kid', 
+                            icon: (
+                              <svg className="w-12 h-12 text-brand-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            )
+                          },
+                          { 
+                            label: 'วัยทำงาน (20-55)', 
+                            value: 'adult', 
+                            icon: (
+                              <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                              </svg>
+                            )
+                          },
+                          { 
+                            label: 'วัยเกษียณ (55+)', 
+                            value: 'senior', 
+                            icon: (
+                              <svg className="w-12 h-12 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                              </svg>
+                            )
+                          }
                         ].map(option => (
                           <button
                             key={option.value}
                             onClick={() => handleAnswer('age', option.value)}
                             className="p-8 rounded-[2rem] border-2 border-gray-100 hover:border-brand-pink hover:bg-brand-pink/5 hover:shadow-2xl hover:shadow-brand-pink/10 transition-all duration-300 group"
                           >
-                            <div className="text-4xl mb-4 group-hover:scale-125 transition-transform duration-300">{option.icon}</div>
+                            <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">{option.icon}</div>
                             <div className="font-black text-gray-700 group-hover:text-brand-pink">{option.label}</div>
                           </button>
                         ))}

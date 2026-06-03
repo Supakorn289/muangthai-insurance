@@ -15,11 +15,11 @@ const SmartAssistantBanner = () => {
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-ping"></span>
                 Coming Soon: AI Concierge
               </div>
-              <h2 className="text-3xl sm:text-4xl font-black text-white mb-10 leading-snug">
+              <h2 className="text-2xl sm:text-3xl font-black text-white mb-8 leading-relaxed">
                 พบกับผู้ช่วย <span className="text-brand-pink">AI</span> อัจฉริยะ <br className="hidden sm:block" />
                 บน <span className="italic">LINE</span> ของคุณเร็วๆ นี้
               </h2>
-              <p className="text-base sm:text-xl text-gray-400 mb-12 max-w-xl leading-relaxed font-medium">
+              <p className="text-sm sm:text-lg text-gray-400 mb-10 max-w-xl leading-relaxed font-medium">
                 ไม่ว่าจะเป็นการค้นหาแผนประกันที่ใช่ หรือสอบถามข้อมูลสิทธิประโยชน์ 
                 ผู้ช่วย AI ของเรารองรับการตอบคำถามคุณตลอด 24 ชั่วโมง 
                 เตรียมพบกับประสบการณ์ใหม่ที่ง่ายและเหนือระดับกว่าเดิม
@@ -38,9 +38,16 @@ const SmartAssistantBanner = () => {
               <div className="bg-white/5 backdrop-blur-2xl p-6 sm:p-10 rounded-[2rem] sm:rounded-[3rem] border border-white/10 shadow-inner relative group">
                 <div className="absolute inset-0 bg-brand-pink/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-[3rem]"></div>
                 <div className="flex items-center gap-4 mb-10 relative z-10">
-                  <div className="w-14 h-14 bg-brand-pink rounded-full flex items-center justify-center font-black text-white text-2xl shadow-lg shadow-brand-pink/30">S</div>
+                  <div className="relative group/logo">
+                    <div className="absolute inset-0 bg-brand-pink rounded-full blur-md opacity-20 group-hover/logo:opacity-40 transition-opacity"></div>
+                    <img 
+                      src="/logo Super Agent.png" 
+                      alt="Super Agent AI Logo" 
+                      className="w-14 h-14 rounded-full border-2 border-brand-pink p-0.5 bg-white object-cover relative z-10 shadow-lg"
+                    />
+                  </div>
                   <div>
-                    <p className="text-white font-black text-lg tracking-tight">Super Agent AI</p>
+                    <p className="text-white font-black text-lg">Super Agent AI</p>
                     <p className="text-green-400 text-xs font-bold tracking-widest uppercase">● Active now</p>
                   </div>
                 </div>

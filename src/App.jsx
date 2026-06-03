@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import RecommendationForm from './components/RecommendationForm';
+import RecommendationQuiz from './components/RecommendationQuiz';
 import InsuranceCategory from './components/InsuranceCategory';
 import PlanCard from './components/PlanCard';
 import ReviewSection from './components/ReviewSection';
@@ -62,7 +62,7 @@ function App() {
   const openLegal = (type) => setLegalModal({ isOpen: true, type });
 
   return (
-    <div className="min-h-screen bg-[#FDFDFD] font-prompt antialiased text-gray-900 overflow-x-hidden">
+    <div className="min-h-screen bg-brand-light antialiased text-brand-dark overflow-x-hidden">
       <Navbar />
       
       <main>
@@ -73,37 +73,41 @@ function App() {
         <div className="reveal">
           <WhyChooseUs />
         </div>
-        <RecommendationForm onSelectPlan={setSelectedPlan} />
+        <RecommendationQuiz onSelectPlan={setSelectedPlan} />
 
-        <section id="plans" className="py-24 sm:py-40 bg-[#F8FAFC] relative overflow-hidden reveal">
-          {/* Subtle Background Pattern */}
-          <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: 'radial-gradient(#ED008C 0.5px, transparent 0.5px)', backgroundSize: '24px 24px'}}></div>
-          <div className="absolute top-0 right-0 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-brand-pink/5 rounded-full blur-[80px] sm:blur-[120px] -mr-24 sm:-mr-48 -mt-24 sm:-mt-48"></div>
+        <section id="plans" className="py-24 sm:py-48 bg-brand-light relative overflow-hidden reveal">
+          {/* Subtle Background Pattern - Refined */}
+          <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage: 'radial-gradient(#ED008C 0.8px, transparent 0.8px)', backgroundSize: '32px 32px'}}></div>
+          <div className="absolute top-0 right-0 w-[400px] sm:w-[800px] h-[400px] sm:h-[800px] bg-brand-pink/5 rounded-full blur-[100px] sm:blur-[150px] -mr-32 sm:-mr-64 -mt-32 sm:-mt-64"></div>
 
-          <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl">
-            <div className="text-center mb-16 sm:mb-24">
-              <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/20 text-brand-pink text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-6 sm:mb-8">
+          <div className="container mx-auto px-6 sm:px-10 relative z-10 max-w-7xl">
+            <div className="text-center mb-20 sm:mb-32">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-brand-pink/5 border border-brand-pink/10 text-brand-pink text-[10px] sm:text-xs font-black uppercase tracking-[0.3em] mb-8 sm:mb-10">
                 Exclusive Selection
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-gray-900 mb-8 sm:mb-10 leading-snug">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-dark mb-10 sm:mb-12 leading-relaxed">
                 แผนประกัน <span className="text-gradient-pink">PREMIUM</span>
               </h2>
-              <p className="text-gray-500 max-w-2xl mx-auto text-base sm:text-xl font-medium leading-relaxed px-4">
+              <p className="text-gray-500 max-w-2xl mx-auto text-lg sm:text-xl font-medium leading-relaxed px-6">
                 คัดสรรความคุ้มครองที่เหนือระดับ เพื่อไลฟ์สไตล์ที่สมบูรณ์แบบและการวางแผนที่มั่นคงที่สุดของคุณ
               </p>
 
-              <div className="max-w-xl mx-auto relative mt-12 sm:mt-20 px-4">
-                <div className="absolute inset-0 bg-brand-pink/10 blur-xl opacity-20"></div>
+              {/* Concierge Search UI */}
+              <div className="max-w-2xl mx-auto relative mt-16 sm:mt-24 px-6 group">
+                <div className="absolute inset-0 bg-brand-pink/10 blur-2xl opacity-0 group-focus-within:opacity-30 transition-opacity duration-700"></div>
                 <input 
                   type="text" 
-                  placeholder="ค้นหาแผนประกัน..." 
-                  className="w-full px-6 py-4 sm:px-8 sm:py-5 rounded-2xl sm:rounded-[2rem] bg-white border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink transition-all outline-none text-base sm:text-lg font-medium relative z-10 shadow-xl"
+                  placeholder="ค้นหาแผนประกันที่ต้องการ..." 
+                  className="w-full px-8 py-5 sm:px-10 sm:py-7 rounded-[2rem] sm:rounded-[2.5rem] bg-white border border-gray-100 text-brand-dark placeholder:text-gray-400 focus:ring-4 focus:ring-brand-pink/5 focus:border-brand-pink/30 transition-all outline-none text-lg sm:text-xl font-medium relative z-10 shadow-[0_30px_60px_rgba(0,0,0,0.04)] hover:shadow-2xl transition-all duration-500"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-brand-pink absolute right-8 sm:right-10 top-1/2 -translate-y-1/2 z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+                <div className="absolute right-10 sm:right-12 top-1/2 -translate-y-1/2 z-10 flex items-center gap-4">
+                  <div className="h-8 w-px bg-gray-100 hidden sm:block"></div>
+                  <svg className="w-6 h-6 sm:w-7 sm:h-7 text-brand-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
               </div>
             </div>
 
@@ -113,7 +117,7 @@ function App() {
               setActiveCategory={setActiveCategory} 
             />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 min-h-[400px] mt-16 sm:mt-24">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 min-h-[500px] mt-20 sm:mt-32">
               {visiblePlans.length > 0 ? (
                 visiblePlans.map((plan) => (
                   <PlanCard 
@@ -123,27 +127,28 @@ function App() {
                   />
                 ))
               ) : (
-                <div className="col-span-full flex flex-col items-center justify-center py-24 sm:py-40 text-center px-4">
-                  <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-gray-100 flex items-center justify-center mb-8 sm:mb-10 border border-gray-200">
-                    <svg className="w-8 h-8 sm:w-10 sm:h-10 text-brand-pink opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <div className="col-span-full flex flex-col items-center justify-center py-32 sm:py-48 text-center px-6">
+                  <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full bg-white flex items-center justify-center mb-10 sm:mb-12 shadow-inner border border-gray-50 relative group">
+                    <div className="absolute inset-0 bg-brand-pink/5 rounded-full scale-0 group-hover:scale-100 transition-transform duration-700"></div>
+                    <svg className="w-10 h-10 sm:w-12 sm:h-12 text-brand-pink opacity-30 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                     </svg>
                   </div>
-                  <p className="text-xl sm:text-2xl font-black text-gray-900 mb-4">ไม่พบผลการค้นหา</p>
-                  <p className="text-gray-400 max-w-xs text-sm sm:text-base leading-relaxed">ลองใช้คำค้นหาอื่น หรือเลือกหมวดหมู่ที่แตกต่างออกไป</p>
+                  <p className="text-2xl sm:text-3xl font-black text-brand-dark mb-6">ไม่พบข้อมูลที่ค้นหา</p>
+                  <p className="text-gray-400 max-w-sm text-base sm:text-lg leading-relaxed font-medium">ลองปรับคำค้นหา หรือเลือกแผนประกันในหมวดหมู่อื่นที่เราเตรียมไว้ให้</p>
                 </div>
               )}
             </div>
 
             {visibleCount < filteredPlans.length && (
-              <div className="flex justify-center mt-20 sm:mt-24">
+              <div className="flex justify-center mt-24 sm:mt-32">
                 <button 
                   onClick={() => setVisibleCount(prev => prev + 3)}
-                  className="group relative px-10 py-5 bg-white text-gray-900 font-black rounded-2xl sm:rounded-[2rem] border-2 border-gray-100 hover:border-brand-pink hover:text-brand-pink transition-all duration-300 shadow-xl shadow-black/5 active:scale-95"
+                  className="group relative px-12 py-6 bg-white text-brand-dark font-black rounded-2xl sm:rounded-[2rem] border border-gray-100 hover:border-brand-pink hover:text-brand-pink transition-all duration-500 shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:shadow-2xl active:scale-95"
                 >
-                  <span className="flex items-center gap-3">
-                    ดูแผนประกันเพิ่มเติม
-                    <svg className="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <span className="flex items-center gap-4 text-lg">
+                    ดูแผนประกันพรีเมียมเพิ่มเติม
+                    <svg className="w-6 h-6 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
                     </svg>
                   </span>

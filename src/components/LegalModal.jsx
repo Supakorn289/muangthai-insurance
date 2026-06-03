@@ -102,7 +102,7 @@ const LegalModal = ({ isOpen, onClose, type }) => {
           <span className="inline-block px-3 py-1 bg-brand-pink/10 text-brand-pink text-[10px] font-black rounded-full mb-4 uppercase tracking-widest">
             {title}
           </span>
-          <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-8 leading-tight">
+          <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-8 leading-relaxed">
             {subtitle}
           </h2>
           

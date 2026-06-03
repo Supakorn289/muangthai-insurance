@@ -13,15 +13,16 @@ html {
 }
 
 body {
-  font-family: 'Prompt', 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans Thai', 'Inter', sans-serif;
   background-color: var(--color-brand-light);
   color: #1F2937;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
 @layer base {
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-gray-900 tracking-tight;
+    @apply font-bold text-gray-900 leading-relaxed;
   }
 }
 

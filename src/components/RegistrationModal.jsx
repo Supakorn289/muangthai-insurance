@@ -94,7 +94,7 @@ const RegistrationModal = ({ isOpen, onClose }) => {
                 <span className="inline-block px-4 py-1.5 rounded-full bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase tracking-widest mb-4">
                   Registration
                 </span>
-                <h2 className="text-3xl font-black text-gray-900 tracking-tight">ลงทะเบียนรับข้อมูล</h2>
+                <h2 className="text-3xl font-black text-gray-900 leading-relaxed">ลงทะเบียนรับข้อมูล</h2>
                 <p className="text-gray-500 mt-2 font-medium">กรอกข้อมูลเพื่อให้เราแนะนำแผนที่คุ้มค่าที่สุด</p>
               </div>
 
