@@ -18,9 +18,9 @@ const PlanCard = ({ plan, onSelect }) => {
   const styles = getCategoryStyles(plan.category);
 
   return (
-    <div className="group bg-white rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(237,0,140,0.06)] border border-gray-100/40 flex flex-col h-full transition-all duration-700 hover:shadow-[0_40px_100px_rgba(237,0,140,0.12)] hover:-translate-y-2">
+    <div className="group bg-white rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_15px_40px_rgba(237,0,140,0.04)] border border-gray-100/40 flex flex-col h-full transition-all duration-700 hover:shadow-[0_40px_100px_rgba(237,0,140,0.1)] hover:-translate-y-2">
       {/* Visual Header - Balanced and Clean */}
-      <div className="relative h-64 sm:h-72 overflow-hidden">
+      <div className="relative h-56 sm:h-72 overflow-hidden">
         <img 
           src={imageUrl} 
           alt={plan.name} 
@@ -28,40 +28,40 @@ const PlanCard = ({ plan, onSelect }) => {
           onError={(e) => { e.target.style.display = 'none'; }}
         />
         {/* Subtle Depth Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
         
-        <div className="absolute bottom-6 left-8 right-8">
-          <h3 className="text-xl sm:text-2xl font-black text-white leading-relaxed drop-shadow-md">{plan.name}</h3>
+        <div className="absolute bottom-4 md:bottom-6 left-6 md:left-8 right-6 md:right-8">
+          <h3 className="text-lg md:text-2xl font-black text-white leading-relaxed drop-shadow-md">{plan.name}</h3>
         </div>
       </div>
       
       {/* Content Section */}
-      <div className="p-10 flex-1 flex flex-col bg-white">
-        <div className="mb-8">
-          <h4 className="text-slate-600 font-bold text-sm sm:text-base leading-relaxed">
+      <div className="p-6 md:p-10 flex-1 flex flex-col bg-white">
+        <div className="mb-6 md:mb-8">
+          <h4 className="text-slate-600 font-bold text-sm md:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
             {plan.description}
           </h4>
         </div>
         
-        <div className="space-y-4 mb-12 flex-1">
+        <div className="space-y-3 md:space-y-4 mb-8 md:mb-12 flex-1">
           {plan.benefits.slice(0, 2).map((benefit, index) => (
-            <div key={index} className="flex items-start gap-4 group/benefit">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-pink mt-2.5 shrink-0 opacity-30 group-hover/benefit:opacity-100 group-hover/benefit:scale-125 transition-all"></div>
-              <span className="text-sm font-medium text-slate-500 leading-relaxed">{benefit}</span>
+            <div key={index} className="flex items-start gap-3 md:gap-4 group/benefit">
+              <div className="w-1.5 h-1.5 rounded-full bg-brand-pink mt-2 md:mt-2.5 shrink-0 opacity-30 group-hover/benefit:opacity-100 group-hover/benefit:scale-125 transition-all"></div>
+              <span className="text-xs md:text-sm font-medium text-slate-500 leading-relaxed">{benefit}</span>
             </div>
           ))}
-          <div className="flex items-center gap-1.5 text-[10px] text-slate-300 font-bold ml-5">
+          <div className="flex items-center gap-1.5 text-[10px] text-slate-300 font-bold ml-4 md:ml-5">
             <span className="uppercase tracking-[0.2em]">Read More Insights</span>
-            <span className="text-lg leading-none mt-1">›</span>
+            <span className="text-lg leading-none mt-0.5 md:mt-1">›</span>
           </div>
         </div>
         
         <button 
           onClick={() => onSelect(plan)}
-          className="w-full bg-brand-pink text-white font-black py-6 rounded-2xl hover:shadow-[0_20px_50px_rgba(237,0,140,0.3)] transition-all duration-500 flex items-center justify-center gap-3 active:scale-[0.98] group/btn"
+          className="w-full bg-brand-pink text-white font-black py-4 md:py-6 rounded-xl md:rounded-2xl hover:shadow-[0_20px_50px_rgba(237,0,140,0.3)] transition-all duration-500 flex items-center justify-center gap-3 active:scale-[0.98] group/btn"
         >
-          <span className="text-sm tracking-wide">สำรวจรายละเอียดแผนนี้</span>
-          <svg className="w-5 h-5 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span className="text-xs md:text-sm tracking-wide">สำรวจรายละเอียดแผนนี้</span>
+          <svg className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </button>
