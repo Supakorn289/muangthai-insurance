@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PlanCard = ({ plan, onSelect }) => {
-  const imageUrl = new URL('../assets/image/' + plan.image, import.meta.url).href;
+  const imageUrl = '/image/' + plan.image;
 
   const getCategoryStyles = (category) => {
     switch (category) {

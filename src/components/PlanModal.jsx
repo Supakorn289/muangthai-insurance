@@ -3,7 +3,7 @@ import React from 'react';
 const PlanModal = ({ plan, onClose }) => {
   if (!plan) return null;
 
-  const imageUrl = new URL('../assets/image/' + plan.image, import.meta.url).href;
+  const imageUrl = plan.image ? '/image/' + plan.image : '';
 
   const getCategoryStyles = (category) => {
     switch (category) {
