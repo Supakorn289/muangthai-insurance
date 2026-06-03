@@ -99,17 +99,18 @@ const Navbar = () => {
           </a>
           
           <div className="flex flex-col items-center gap-6 mt-4">
-            <a 
-              href="#contact" 
-              className="bg-brand-pink text-white px-12 py-5 rounded-[2rem] text-2xl font-black shadow-xl shadow-brand-pink/20 active:scale-95"
-              onClick={() => setIsMenuOpen(false)}
+            <button 
+              className="bg-[#00B900] text-white px-12 py-5 rounded-[2rem] text-xl font-black shadow-xl shadow-[#00B900]/20 active:scale-95 flex items-center justify-center gap-3"
+              onClick={() => {
+                window.open('https://line.me/ti/p/~Satchaphon0216', '_blank');
+                setIsMenuOpen(false);
+              }}
             >
-              ติดต่อเรา
-            </a>
-            <div className="text-center">
-              <p className="text-gray-400 font-bold uppercase tracking-[0.3em] text-[10px] mb-2">Premium Support 24 Hours</p>
-              <p className="text-brand-pink text-3xl font-black">1766</p>
-            </div>
+              <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.052.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.571-3.951 2.571-6.092z" />
+              </svg>
+              ปรึกษาผ่าน LINE
+            </button>
           </div>
         </div>
       </div>

@@ -183,9 +183,15 @@ function App() {
               ให้ผู้เชี่ยวชาญจาก <span className="font-black underline decoration-white decoration-4 underline-offset-8">Super Agent</span> ช่วยแนะนำแผนที่เหมาะสมที่สุดสำหรับคุณโดยเฉพาะ
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 px-4">
-              <a href="tel:1766" className="w-full sm:w-auto bg-white text-brand-pink px-10 py-5 sm:px-14 sm:py-6 rounded-2xl sm:rounded-[2rem] font-black text-lg sm:text-xl hover:shadow-[0_20px_60px_rgba(255,255,255,0.4)] transition-all transform hover:-translate-y-1 active:scale-95 text-center flex items-center justify-center">
-                โทรเลย 1766
-              </a>
+              <button 
+                onClick={() => window.open('https://line.me/ti/p/~Satchaphon0216', '_blank')}
+                className="w-full sm:w-auto bg-[#00B900] text-white px-10 py-5 sm:px-14 sm:py-6 rounded-2xl sm:rounded-[2rem] font-black text-lg sm:text-xl hover:shadow-[0_20px_60px_rgba(0,185,0,0.4)] transition-all transform hover:-translate-y-1 active:scale-95 text-center flex items-center justify-center gap-3"
+              >
+                <svg className="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 24 24">
+                  <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.052.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.571-3.951 2.571-6.092z" />
+                </svg>
+                ปรึกษาผ่าน LINE
+              </button>
               <button onClick={() => setIsRegModalOpen(true)} className="w-full sm:w-auto bg-transparent border-2 border-white/40 text-white px-10 py-5 sm:px-14 sm:py-6 rounded-2xl sm:rounded-[2rem] font-black text-lg sm:text-xl hover:bg-white/10 transition-all active:scale-95">
                 ลงทะเบียนรับข้อมูล
               </button>
