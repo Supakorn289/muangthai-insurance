@@ -47,10 +47,27 @@ function App() {
   }, [activeCategory, searchQuery]);
 
   const filteredPlans = useMemo(() => {
-    return insuranceData.plans.filter(plan => {
+    const searchLower = (searchQuery || '').toLowerCase().trim();
+    
+    return (insuranceData?.plans || []).filter(plan => {
+      // 1. Category Filter
       const matchesCategory = activeCategory === 'all' || plan.category === activeCategory;
-      const matchesSearch = plan.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                            plan.tagline.toLowerCase().includes(searchQuery.toLowerCase());
+      
+      // 2. Search Filter (Safe & Expanded)
+      if (!searchLower) return matchesCategory;
+
+      const name = (plan?.name || '').toLowerCase();
+      const description = (plan?.description || '').toLowerCase();
+      
+      // Safe check for tags array
+      const tagsString = Array.isArray(plan?.tags) 
+        ? plan.tags.join(' ').toLowerCase() 
+        : '';
+      
+      const matchesSearch = name.includes(searchLower) || 
+                            description.includes(searchLower) || 
+                            tagsString.includes(searchLower);
+
       return matchesCategory && matchesSearch;
     });
   }, [activeCategory, searchQuery]);
